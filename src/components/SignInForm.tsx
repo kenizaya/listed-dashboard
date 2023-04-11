@@ -36,7 +36,7 @@ const SignInForm = () => {
               Email address
             </label>
             <input
-              className='border rounded-[10px] w-full py-[10px] px-[15px] text-base font-lato bg-[#f5f5f5] text-black leading-tight focus:outline-none focus:shadow-outline'
+              className='border rounded-[10px] w-[325px] h-[40px] py-[10px] px-[15px] text-base font-lato bg-[#f5f5f5] text-black leading-tight focus:outline-none focus:shadow-outline'
               id='email'
               type='email'
               placeholder='johndoe@gmail.com'
@@ -50,10 +50,10 @@ const SignInForm = () => {
               Password
             </label>
             <input
-              className='border rounded-[10px] w-full py-[10px] px-[15px] text-base font-lato bg-[#eaeaea] text-black leading-tight focus:outline-none focus:shadow-outline'
+              className='border rounded-[10px] w-[325px] h-[40px] py-[10px] px-[15px] text-base font-lato bg-[#eaeaea] text-black leading-tight focus:outline-none focus:shadow-outline'
               id='password'
               type='password'
-              placeholder='password'
+              placeholder='••••••••'
             />
           </div>
           <Button
