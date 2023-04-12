@@ -37,13 +37,11 @@ const ScheduleItem = ({
   description,
   time,
   location,
-  color,
   className,
 }: {
   description: string
   time: string
   location: string
-  color: string
   className: string
 }) => {
   return (

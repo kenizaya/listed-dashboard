@@ -1,6 +1,8 @@
 import React from 'react'
 import notification from '../assets/icons/notification.svg'
 import avatar from '../assets/avatar.png'
+import search from '../assets/icons/search.svg'
+import SearchBox from './SearchBox'
 
 const Header = () => {
   return (
@@ -9,11 +11,7 @@ const Header = () => {
         Dashboard
       </h3>
       <div className='flex'>
-        <input
-          type='text'
-          placeholder='Search...'
-          className='input input-bordered input-sm max-h-[30px] max-w-[180px] font-lato text-sm'
-        />
+        <SearchBox />
         <img
           src={notification}
           alt='icon'
