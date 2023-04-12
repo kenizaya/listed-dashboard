@@ -33,7 +33,17 @@ const ScheduleCard = () => {
   )
 }
 
-const ScheduleItem = ({ description, time, location, color }) => {
+const ScheduleItem = ({
+  description,
+  time,
+  location,
+  color,
+}: {
+  description: string
+  time: string
+  location: string
+  color: string
+}) => {
   return (
     <div className=' border-l-[5px] border-[#9BDD7C] mb-[13px]'>
       <div className='flex flex-col gap-[5px] pl-[10px]'>
