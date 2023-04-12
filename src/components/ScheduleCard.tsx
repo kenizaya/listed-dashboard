@@ -21,13 +21,13 @@ const ScheduleCard = () => {
         description='Meeting with suppliers from Kuta Bali'
         time='14.00-15.00'
         location='Sunset Road, Kuta, Bali'
-        color='#9BDD7C'
+        className='border-borderGreen'
       />
       <ScheduleItem
         description='Check operation at Giga Factory 1'
         time='18.00-20.00'
         location='Central Jakarta'
-        color='#9BDD7C'
+        className='border-borderBlue'
       />
     </div>
   )
@@ -38,14 +38,16 @@ const ScheduleItem = ({
   time,
   location,
   color,
+  className,
 }: {
   description: string
   time: string
   location: string
   color: string
+  className: string
 }) => {
   return (
-    <div className=' border-l-[5px] border-[#9BDD7C] mb-[13px]'>
+    <div className={`border-l-[5px] mb-[13px] ${className}`}>
       <div className='flex flex-col gap-[5px] pl-[10px]'>
         <h4 className='font-lato font-bold text-[#666666] text-sm'>
           {description}

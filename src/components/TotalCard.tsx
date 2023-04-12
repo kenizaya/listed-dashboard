@@ -2,17 +2,15 @@ import React from 'react'
 
 interface TotalCardProps {
   icon: string
-  color: string
   text: string
   amount: string
+  className: string
 }
 
-const TotalCard = ({ icon, color, text, amount }: TotalCardProps) => {
-  const bgColor = `bg-${color}`
-
+const TotalCard = ({ icon, text, amount, className }: TotalCardProps) => {
   return (
     <div
-      className={`py-5 px-[25px] w-[221.05px] h-[120px] rounded-[20px] text-black ${bgColor}`}
+      className={`py-5 px-[25px] w-[221.05px] h-[120px] rounded-[20px] text-black ${className}`}
     >
       <div className='flex justify-end'>
         <img src={icon} alt='icon' />

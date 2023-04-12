@@ -8,11 +8,13 @@ export default {
         lato: ['Lato', 'sans-serif'],
         openSans: ['Open Sans', 'sans-serif'],
       },
-      backgroundColor: {
+      colors: {
         revenueColor: '#DDEFE0',
         transactionColor: '#F4ECDD',
         likeColor: '#EFDADA',
         userColor: '#DEE0EF',
+        borderBlue: '#6972C3',
+        borderGreen: '#9BDD7C',
       },
     },
   },

@@ -15,29 +15,29 @@ const Dashboard = () => {
       <Sidebar />
       <div className='mt-[60px]'>
         <Header />
-        <div className='flex'>
+        <div className='flex justify-between'>
           <TotalCard
             icon={revenue}
             text='Total Revenues'
-            color='revenueColor'
+            className='bg-revenueColor'
             amount='$2,129,430'
           />
           <TotalCard
             icon={transaction}
             text='Total Transactions'
-            color='transactionColor'
+            className='bg-transactionColor'
             amount='1,520'
           />
           <TotalCard
             icon={like}
             text='Total Likes'
-            color='likeColor'
+            className='bg-likeColor'
             amount='9,721'
           />
           <TotalCard
             icon={user}
             text='Total Users'
-            color='userColor'
+            className='bg-userColor'
             amount='892'
           />
         </div>
