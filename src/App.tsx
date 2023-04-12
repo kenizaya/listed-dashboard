@@ -8,9 +8,8 @@ import Dashboard from './pages/Dashboard'
 const App = () => {
   return (
     <div>
-      {/* <SignInPage /> */}
-      {/* <TotalCard icon={revenue} color='revenueColor' /> */}
-      <Dashboard />
+      <SignInPage />
+      {/* <Dashboard /> */}
     </div>
   )
 }
