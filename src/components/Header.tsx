@@ -1,5 +1,6 @@
 import React from 'react'
 import notification from '../assets/icons/notification.svg'
+import avatar from '../assets/avatar.png'
 
 const Header = () => {
   return (
@@ -22,7 +23,7 @@ const Header = () => {
         />
         <div className='avatar'>
           <div className='w-8 rounded-full'>
-            <img src='/images/stock/photo-1534528741775-53994a69daeb.jpg' />
+            <img src={avatar} />
           </div>
         </div>
       </div>

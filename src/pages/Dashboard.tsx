@@ -8,6 +8,7 @@ import user from '../assets/icons/user.svg'
 import Header from '../components/Header'
 import ScheduleCard from '../components/ScheduleCard'
 import TopProductsCard from '../components/TopProductsCard'
+import ActivitiesCard from '../components/ActivitiesCard'
 
 const Dashboard = () => {
   return (
@@ -41,6 +42,7 @@ const Dashboard = () => {
             amount='892'
           />
         </div>
+        <ActivitiesCard className='my-10' />
         <div className='flex gap-10'>
           <TopProductsCard />
           <ScheduleCard />
