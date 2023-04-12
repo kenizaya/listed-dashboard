@@ -6,10 +6,11 @@ import transaction from '../assets/icons/transaction.svg'
 import like from '../assets/icons/like.svg'
 import user from '../assets/icons/user.svg'
 import Header from '../components/Header'
+import ScheduleCard from '../components/ScheduleCard'
 
 const Dashboard = () => {
   return (
-    <div className='flex'>
+    <div className='flex bg-[#f5f5f5]'>
       <Sidebar />
       <div className='mt-[60px]'>
         <Header />
@@ -39,6 +40,7 @@ const Dashboard = () => {
             amount='892'
           />
         </div>
+        <ScheduleCard />
       </div>
     </div>
   )
