@@ -9,6 +9,7 @@ interface TotalCardProps {
 
 const TotalCard = ({ icon, color, text, amount }: TotalCardProps) => {
   const bgColor = `bg-${color}`
+
   return (
     <div
       className={`py-5 px-[25px] w-[221.05px] h-[120px] rounded-[20px] text-black ${bgColor}`}
