@@ -12,11 +12,11 @@ import ActivitiesCard from '../components/ActivitiesCard'
 
 const Dashboard = () => {
   return (
-    <div className='flex bg-[#f5f5f5]'>
+    <div className='flex bg-[#f5f5f5] w-full'>
       <Sidebar />
-      <div className='mt-[60px]'>
+      <div className='max-w-[1068px] w-full py-[60px] pr-[60px]'>
         <Header />
-        <div className='flex justify-between'>
+        <div className='flex justify-between flex-col items-center gap-5 flex-wrap sm:flex-row max-w-[500px] md:max-w-full'>
           <TotalCard
             icon={revenue}
             text='Total Revenues'
@@ -43,7 +43,7 @@ const Dashboard = () => {
           />
         </div>
         <ActivitiesCard className='my-10' />
-        <div className='flex gap-10'>
+        <div className='flex gap-10 flex-col sm:flex-row'>
           <TopProductsCard />
           <ScheduleCard />
         </div>

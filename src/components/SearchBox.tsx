@@ -10,14 +10,14 @@ const SearchBox = () => {
       >
         <img
           src={search}
-          className='fill-gray-400 absolute top-2.5 right-3 focus:hidden'
+          className='fill-gray-400 absolute top-1.5 md:top-2.5 right-3 focus:hidden'
         />
       </label>
       <input
         type='text'
         id='search'
         placeholder='Search...'
-        className='input input-bordered input-sm max-h-[30px] max-w-[180px] font-lato text-sm'
+        className='input input-bordered input-sm max-w-[140px] max-h-[25px] md:max-h-[30px] md:max-w-[180px] font-lato text-sm'
       />
     </div>
   )

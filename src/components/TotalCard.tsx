@@ -17,7 +17,7 @@ const TotalCard = ({ icon, text, amount, className }: TotalCardProps) => {
       </div>
       <div className='flex flex-col'>
         <span className='text-sm font-lato leading-[16.8px]'>{text}</span>
-        <span className='text-2xl font-openSans leading-[32.68px]'>
+        <span className='text-xl md:text-2xl font-openSans leading-[32.68px]'>
           {amount}
         </span>
       </div>

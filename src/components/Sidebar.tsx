@@ -8,11 +8,15 @@ import settingSidebar from '../assets/icons/settingSidebar.svg'
 
 const Sidebar = () => {
   return (
-    <aside className='w-[280px] bg-black px-[50px] py-[60px] m-10 rounded-[30px] min-h-[940px] flex flex-col justify-between'>
+    <aside className='w-[280px] bg-black hidden px-[50px] py-[60px] m-10 rounded-[30px] min-h-[940px] md:flex flex-col justify-between'>
       <div>
-        <Logo className='text-4xl' />
+        <Logo className='text-2xl lg:text-4xl' />
         <ul className='flex flex-col gap-10'>
-          <SidebarItem icon={dashboardSidebar} text='Dashboard' />
+          <SidebarItem
+            icon={dashboardSidebar}
+            text='Dashboard'
+            className='font-bold'
+          />
           <SidebarItem icon={transactionSidebar} text='Transactions' />
           <SidebarItem icon={scheduleSidebar} text='Schedules' />
           <SidebarItem icon={userSidebar} text='Users' />
@@ -28,11 +32,21 @@ const Sidebar = () => {
   )
 }
 
-const SidebarItem = ({ icon, text }: { icon: string; text: string }) => {
+const SidebarItem = ({
+  icon,
+  text,
+  className,
+}: {
+  icon: string
+  text: string
+  className?: string
+}) => {
   return (
-    <li className='flex gap-5 cursor-pointer active:font-bold'>
+    <li className={`flex gap-5 cursor-pointer active:font-bold ${className}`}>
       <img src={icon} alt='icon' />
-      <span className='text-white font-montserrat text-lg'>{text}</span>
+      <span className='text-white font-montserrat sm:text-sm md:text-base lg:text-lg'>
+        {text}
+      </span>
     </li>
   )
 }

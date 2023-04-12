@@ -47,6 +47,11 @@ const ActivitiesCard = ({ className }: { className?: string }) => {
   const options: ChartOptions<'line'> = {
     responsive: true,
     maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
     elements: {
       point: {
         radius: 0,
@@ -81,14 +86,14 @@ const ActivitiesCard = ({ className }: { className?: string }) => {
 
   return (
     <div
-      className={`h-[360px] w-[1000px] rounded-[20px] pt-[30px] px-10 bg-white ${className}`}
+      className={`w-[400px] md:h-[360px] md:w-[1000px] rounded-[20px] pt-[30px] px-10 bg-white ${className}`}
     >
       <div className='flex justify-between'>
         <div className='flex flex-col gap-[5px] justify-between pb-7'>
-          <h3 className='font-montserrat font-bold text-lg text-black'>
+          <h3 className='font-montserrat font-bold text-base md:text-lg text-black'>
             Activities
           </h3>
-          <button className='flex items-center gap-[6px] font-montserrat text-xs text-[#858585] leading-[15px]'>
+          <button className='flex items-center gap-[6px] font-montserrat text-[10px] md:text-xs text-[#858585] leading-[15px]'>
             May-June 2021{' '}
             <span>
               <img src={downArrow} alt='' />
@@ -98,16 +103,20 @@ const ActivitiesCard = ({ className }: { className?: string }) => {
         <div className='flex gap-[35px] pr-[60px]'>
           <div className='flex gap-[10px] items-center'>
             <div className='badge badge-xs bg-[#E9A0A0]'></div>
-            <span className='font-lato text-sm text-black'>Guest</span>
+            <span className='font-lato text-base md:text-sm text-black'>
+              Guest
+            </span>
           </div>
           <div className='flex gap-[10px] items-center'>
             <div className='badge badge-xs bg-green-400'></div>
-            <span className='font-lato text-sm text-black'>Users</span>
+            <span className='font-lato text-base md:text-sm text-black'>
+              Users
+            </span>
           </div>
         </div>
       </div>
 
-      <div className='h-[212px] w-[921px] flex justify-center items-center'>
+      <div className='h-[212px] w-full overflow-x-auto flex justify-center items-center'>
         <Line data={data} options={options} />
       </div>
     </div>

@@ -4,12 +4,12 @@ import rightArrow from '../assets/icons/rightArrow.svg'
 
 const ScheduleCard = () => {
   return (
-    <div className='w-[480px] rounded-[20px] h-[256px] px-10 py-[30px] bg-white'>
+    <div className='w-[400px] md:w-[480px] rounded-[20px] h-[256px] px-10 py-[30px] bg-white'>
       <div className='flex justify-between pb-7'>
-        <h3 className='font-montserrat font-bold text-lg text-black'>
+        <h3 className='font-montserrat font-bold text-base md:text-lg text-black'>
           Today's schedule
         </h3>
-        <button className='flex items-center gap-[6px] font-montserrat text-xs text-[#858585] leading-[15px]'>
+        <button className='flex items-center gap-[6px] font-montserrat text-[10px] md:text-xs text-[#858585] leading-[15px]'>
           See all{' '}
           <span>
             <img src={rightArrow} alt='' />
@@ -47,7 +47,7 @@ const ScheduleItem = ({
   return (
     <div className={`border-l-[5px] mb-[13px] ${className}`}>
       <div className='flex flex-col gap-[5px] pl-[10px]'>
-        <h4 className='font-lato font-bold text-[#666666] text-sm'>
+        <h4 className='font-lato font-bold text-[#666666] text-xs md:text-sm'>
           {description}
         </h4>
         <span className='text-[#999999] font-lato text-xs'>{time}</span>

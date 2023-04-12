@@ -1,16 +1,15 @@
 import React from 'react'
 import notification from '../assets/icons/notification.svg'
 import avatar from '../assets/avatar.png'
-import search from '../assets/icons/search.svg'
 import SearchBox from './SearchBox'
 
 const Header = () => {
   return (
-    <div className='flex justify-between items-center mb-10'>
+    <div className='flex flex-col gap-5 md:flex-row max-w-full justify-between items-center mb-10'>
       <h3 className='font-montserrat text-black text-2xl font-bold'>
         Dashboard
       </h3>
-      <div className='flex'>
+      <div className='flex gap-2 md:gap-0'>
         <SearchBox />
         <img
           src={notification}
