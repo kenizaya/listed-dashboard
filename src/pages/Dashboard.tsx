@@ -16,7 +16,7 @@ const Dashboard = () => {
       <Sidebar />
       <div className='max-w-[1068px] w-full py-[60px] pr-[60px]'>
         <Header />
-        <div className='flex justify-between flex-col items-center gap-5 flex-wrap sm:flex-row max-w-[500px] md:max-w-full'>
+        <div className='flex justify-center sm:justify-between items-center w-full gap-5 flex-wrap'>
           <TotalCard
             icon={revenue}
             text='Total Revenues'
