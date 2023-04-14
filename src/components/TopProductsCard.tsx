@@ -58,10 +58,10 @@ const TopProductsCard = () => {
   }
 
   return (
-    <div className='w-[400px] md:w-[480px] rounded-[20px] h-[256px] px-10 py-[30px] bg-white'>
+    <div className='w-[400px] md:w-[480px] lg:w-1/2 rounded-[20px] h-[256px] px-10 py-[30px] bg-white'>
       <div className='flex justify-between pb-7'>
         <h3 className='font-montserrat font-bold text-base md:text-lg text-black'>
-          Today's schedule
+          Top Products
         </h3>
         <button className='flex items-center gap-[6px] font-montserrat text-[10px] md:text-xs text-[#858585] leading-[15px]'>
           May-June 2021{' '}

@@ -7,10 +7,10 @@ import Dashboard from './pages/Dashboard'
 
 const App = () => {
   return (
-    <>
-      {/* <SignInPage /> */}
+    <div className='max-w-[1440px] max-h-[1024px]'>
+      <SignInPage />
       <Dashboard />
-    </>
+    </div>
   )
 }
 

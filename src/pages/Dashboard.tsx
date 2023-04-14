@@ -12,9 +12,9 @@ import ActivitiesCard from '../components/ActivitiesCard'
 
 const Dashboard = () => {
   return (
-    <div className='flex bg-[#f5f5f5] w-full'>
+    <div className='flex bg-[#f5f5f5] w-full pl-[40px]'>
       <Sidebar />
-      <div className='max-w-[1068px] w-full py-[60px] pr-[60px]'>
+      <div className='w-full bg-[#f5f5f5] py-[60px] pr-[60px]'>
         <Header />
         <div className='flex justify-center sm:justify-between items-center w-full gap-5 flex-wrap'>
           <TotalCard

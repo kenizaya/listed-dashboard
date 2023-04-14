@@ -10,7 +10,7 @@ interface TotalCardProps {
 const TotalCard = ({ icon, text, amount, className }: TotalCardProps) => {
   return (
     <div
-      className={`py-2 lg:py-5 px-[15px] lg:px-[25px] w-[160px] h-[80px] lg:w-[221.05px] lg:h-[120px] rounded-[20px] text-black ${className}`}
+      className={`py-2 lg:py-5 px-[15px] lg:px-[25px] w-[140px] h-[80px] sm:w-[160px] sm:h-[80px] lg:w-[221.05px] lg:h-[120px] rounded-[20px] text-black ${className}`}
     >
       <div className='flex justify-end'>
         <img

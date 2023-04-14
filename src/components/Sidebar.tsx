@@ -8,7 +8,7 @@ import settingSidebar from '../assets/icons/settingSidebar.svg'
 
 const Sidebar = () => {
   return (
-    <aside className='w-[280px] bg-black hidden px-[50px] py-[60px] m-10 rounded-[30px] min-h-[940px] md:flex flex-col justify-between'>
+    <aside className='w-[280px] bg-black hidden px-[50px] py-[60px] m-10 ml-0 rounded-[30px] min-h-[940px] md:flex flex-col justify-between'>
       <div>
         <Logo className='text-2xl lg:text-4xl' />
         <ul className='flex flex-col gap-10'>
