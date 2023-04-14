@@ -2,8 +2,19 @@ import React from 'react'
 import Button from './Button'
 import google from '../assets/icons/google.svg'
 import apple from '../assets/icons/apple.svg'
+import { signIn, useSession, signOut } from 'next-auth/react'
 
-const SignInForm = () => {
+const SignIn = () => {
+  // const { data: session, status } = useSession()
+
+  // if (session) {
+  //   return (
+  //     <>
+  //       Signed in as {session.user.email} <br />
+  //       <button onClick={() => signOut()}>Sign out</button>
+  //     </>
+  //   )
+  // }
   return (
     <div className='bg-[#f5f5f5] flex flex-col items-center justify-center md:w-3/5 h-full px-10 md:px-10 py-10 md:py-0'>
       <div className='max-w-96'>
@@ -27,7 +38,10 @@ const SignInForm = () => {
           />
         </div>
 
-        <form className='w-80 md:w-96 rounded-[20px] bg-white p-[30px] flex flex-col gap-5'>
+        <form
+          // onSubmit={() => signIn()}
+          className='w-80 md:w-96 rounded-[20px] bg-white p-[30px] flex flex-col gap-5'
+        >
           <div>
             <label
               className='block text-black font-lato text-base mb-[10px]'
@@ -81,4 +95,4 @@ const SignInForm = () => {
   )
 }
 
-export default SignInForm
+export default SignIn
